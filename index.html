@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		function gen(){
+			var arr=[];
+			var v = document.querySelectorAll("div.inp > input");
+			var inputText;
+			for(var i in v){
+   				inputText = v[i].value;
+   				if (!!inputText) {
+   					if (!!arr[0]) {
+   					arr.push("\""+inputText+"\"");
+   				}else{
+   					arr.push("var want=[\""+inputText+"\"");
+   				}
+   				}
+   				
+
+			}
+			arr[arr.length-1]=arr[arr.length-1]+"];";
+			document.getElementById('result').value=arr;
+		}
+	</script>
+</head>
+<body>
+	<div class="inp">
+	<input type="text" id="i1"><br><br>
+	<input type="text" id="i2"><br><br>
+	<input type="text" id="i3"><br><br>
+	<input type="text" id="i4"><br><br>
+	<input type="text" id="i5"><br><br>
+	<input type="text" id="i6"><br><br>
+	<input type="text" id="i7"><br><br>
+	<input type="text" id="i8"><br><br>
+	<input type="text" id="i9"><br><br>
+	<input type="text" id="i10"><br><br>
+</div>
+	<input type="text" id="result"><br><br>
+	<button onclick="gen();" a="#">Genarate</button>
+
+</body>
+</html>
