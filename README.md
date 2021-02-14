@@ -70,7 +70,7 @@ for (var j = 0; j < want.length; j++) {
     b=a[j][s-1];
 console.log(b);
     if(last[j]!=b && b!=null){   
-    last.push(b);
+    last[j]=b;
 notifyMe(b);
 }
 }
