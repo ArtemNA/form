@@ -6,6 +6,7 @@ go to https://artemna.github.io/form/index.html and dill the form (first 10 inpu
 
 then open one tab with discord.com/app and open channel u want, open console (cntr+shift+i) and paste next code with the replacement of the line you received from the form(second line)
 
+```
 var last=[]
 var want=[] //<===REPLACE IT
 function notifyMe(x) {
@@ -84,4 +85,5 @@ setInterval(function(){
     myTriger()
 }, 15000)
 
+```
 Enjoy!
