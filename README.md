@@ -1,6 +1,6 @@
 Form for auto search TFT wtb msg in discord(BROWSER ONLY)
 
-go to https://artemna.github.io/form/index.html and dill the form (first 10 input text area for input and last one for output result for u)
+go to https://artemna.github.io/form/index.html and fill the form (first 10 input text area for input and last one for output result for u)
 
 
 
