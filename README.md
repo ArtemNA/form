@@ -56,9 +56,9 @@ for (var i = 0; i <test.length ; i++) {
 
         var testTarget=document.getElementsByClassName("markup-2BOw-j messageContent-2qWWxC")[i].innerHTML;//hear , this element is target
        
-       testTarget.toLowerCase();
+       var lower = testTarget.toLowerCase();
 
-        if(testTarget.includes(want[j])){
+        if(lower.includes(want[j])){
         //console.save(testTarget);//<p class="test">hello word2</p>
         a[j].push(testTarget);
         console.log(a[j][i])
@@ -84,6 +84,5 @@ myTriger();
 setInterval(function(){
     myTriger()
 }, 15000)
-
 ```
 Enjoy!
