@@ -56,7 +56,7 @@ for (var i = 0; i <test.length ; i++) {
 
         var testTarget=document.getElementsByClassName("markup-2BOw-j messageContent-2qWWxC")[i].innerHTML;//hear , this element is target
        
-       
+       testTarget.toLowerCase();
 
         if(testTarget.includes(want[j])){
         //console.save(testTarget);//<p class="test">hello word2</p>
